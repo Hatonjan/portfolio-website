@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jonathan Scott</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-icons.css">
+        <link rel="stylesheet" href="/css/aos.css">
+        <link rel="stylesheet" href="/css/hover-animations.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+        <!-- navigation bar -->
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid"> 
+                    <div class="logo ">
+                        <a href="#home" class="navbar-brand">
+                            <img src="./assets/svg/logo2.svg" alt="Home">
+                            <span>Jonathan Scott</span>
+                        </a>
+                    </div>
+                    
+                    <button 
+                        class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarCollapse" 
+                        aria-controls="navbarCollapse" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <span><img src="./assets/img/hamburger-menu-white.png" alt="Hamburger menu logo"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0 navigation">
+                            <li class="nav-item"><a class="nav-link" href="#home">{home}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">{About}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">{Projects} </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#education">{Education} </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">{Contact}</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <h1>Jonathan Scott</h1>
+                <h2>Computer Science Major</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-12">
+                            <a href="#about" class="hero-button">About me</a>
+                            <img id="avatar" src="./assets/img/pixel-avatar/pixel-avatar1.png" alt="A pixel art image of myself">
+                            <a href="#contact" class="hero-button">Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container-flex">
+
+<!-- About variable for the desktop version -->
+                    <h2>
+                        <pre class="code-editor">
+<span class="let">let</span> <span class="variable">Jonathan</span> = <span class="operator">{</span>
+    <span class="variable">Student</span>: <span class="boolean">true</span>,
+    <span class="variable">Experience</span>: <span class = string>"With five years of experience as a project 
+        manager in the welding industry, I applied mathematical 
+        and analytical thinking to optimize workflows. Now, I 
+        combine those skills with software development to create 
+        software that solves problems, structure systems, and 
+        document processes."
+    </span>, 
+    <span class="variable">Skills</span>: <span class="bracket">{</span>
+        <span class="variable">Programming</span>:<span class="bracket1">[</span><span class="string">"HTML/CSS/JavaScript"</span>, <span class="string">"Python"</span>, <span class="string">"SQL"</span>, <span class="string">"Git"</span> <span class="bracket1">]</span>, 
+        <span class="variable">Tolling</span>:<span class="bracket1">[</span><span class="string">"Figma"</span>, <span class="string">"GIMP"</span>,<span class="string">"Inkscape"</span>, <span class="string">"Aseprite"</span>, <span class="string">"3D Modeling"</span><span class="bracket1">]</span>, 
+    <span class="bracket">}</span>,
+    <span class="variable">Mindset</span>: <span class="string">"Passionate about learning and driven by curiosity"</span> 
+<span class="operator">}</span>;
+        
+                        </pre>
+                    </h2>
+                </div>
+<!-- End of the variable for the desktop version -->
+
+
+<!-- About variable for the mobile version -->
+                    <h2>
+                        <pre class="mobile-code-editor">
+<span class="let">let</span> <span class="variable">Jonathan</span> = <span class="operator">{</span>
+
+    <span class="variable">Student</span>: <span class="boolean">true</span>,
+    
+    <span class="variable">Experience</span>: 
+    <span class = string>
+        "With five years of 
+        experience as a project 
+        manager in the welding 
+        industry, I applied 
+        mathematical and analytical 
+        thinking to optimize 
+        workflows. Now, combine 
+        those skills with software 
+        development to create 
+        software that solves 
+        problems, structure systems, 
+        and document processes."
+    </span>, 
+
+    <span class="variable">Skills</span>: <span class="bracket">{</span>
+
+        <span class="variable">Programming</span>:<span class="bracket1">[</span>
+        <span class="string">"HTML/CSS/JavaScript"</span>, 
+        <span class="string">"Python"</span>, <span class="string">"SQL"</span>, <span class="string">"Git"</span> 
+        <span class="bracket1">]</span>, 
+        
+        <span class="variable">Tolling</span>:<span class="bracket1">[</span>
+        <span class="string">"Figma"</span>, <span class="string">"GIMP"</span>,<span class="string">"Inkscape"</span>, 
+        <span class="string">"Aseprite"</span>, <span class="string">"3D Modeling"</span>
+        <span class="bracket1">]</span>, 
+    <span class="bracket">}</span>,
+
+    <span class="variable">Mindset</span>: 
+        <span class="string">"Passionate about learning 
+            and driven by curiosity"
+        </span> 
+<span class="operator">}</span>;
+                        </pre>
+                    </h2>
+<!-- End of the variable for the mobile version -->
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>    
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="projects-box holographic-card">
+                                <h3>The Nightfall Adventure</h3>
+                                <img src="./assets/img/the-nigfall-adventure.png" alt="Screenshot of a pixel art video game with a nighttime forest background">
+                                <p>Pixel art video game developed with JavaScript and the p5.js library</p>
+                                <a  href="https://github.com/Hatonjan/thenightfalladventure" target="_blank">                                  
+                                <img class="repo" src="./assets/icons/github-repo.png" alt="GitHub logo"> 
+                                </a>
+                                <a class="projects-button" href="https://hatonjan.github.io/thenightfalladventure/" target="_blank">Live view</a>          
+                            </div>
+
+                            <div class="projects-box holographic-card">
+                                <h3>Data Visualization App</h3>
+                                <img src="./assets/img/data-vis-app.png" alt="Screenshot of a space rocker being launched with the title winning the space race with data science by Jonathan Scott 11/24/2024">
+                                <p>Data visualization web app develop with HTML/CSS/JavaScript, p5.js and Leaflet. </p>  
+                                <a href="" target="_blank">
+                                <!-- <img class="repo" src="./assets/icons/github-repo.png" style="width: 40px;" alt="GitHub logo"> -->
+                                </a>
+                                <!-- <a class="projects-button" href="https://hatonjan.github.io/thenightfalladventure/">Live view</a> -->
+                            </div>
+
+                            <div class="projects-box holographic-card">
+                                <h3>Shaving Soap Barber shop</h3>
+                                <img src="./assets/img/shaving-soap.png" alt="A pixel art video game">
+                                <p>Web page developed with HTML/CSS/JavaScript, bootstrap and AOS </p>
+                                <a href="https://github.com/Hatonjan/barber-shop" target="_blank">
+                                <img class="repo" src="./assets/icons/github-repo.png" style="width: 40px;" alt="GitHub logo">
+                                </a>
+                                <a class="projects-button" href="https://shaving-soap.netlify.app/">Live view</a>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <div class="projects-box holographic-card">
+                                <h3>Data Science Project</h3>
+                                <img src="./assets/img/data-science.png" alt="Screenshot of a space rocker being launched with the title winning the space race with data science by Jonathan Scott 11/24/2024">
+                                <p>Applied data science to Space-X  Falcon-9 data with Python and SQL.</p> 
+                                <a href="https://github.com/Hatonjan/SpaceX-Rocket-Launch-Analysis" target="_blank">
+                                <img class="repo" src="./assets/icons/github-repo.png" style="width: 40px;" alt="GitHub logo">
+                                </a>
+                                <a class="projects-button" href="https://hatonjan.github.io/thenightfalladventure/">PowerPoint</a> 
+                            </div>
+
+                            <div class="projects-box holographic-card">
+                                <h3>The Animal Explorer</h3>
+                                <img src="./assets/img/animal-explorer.png" alt="A pixel art video game">
+                                <p>Web application developed  with HTML/CSS/JavaScript, jQuery and bootstrap</p>
+                                <a href="https://github.com/Hatonjan/animals-info" target="_blank">
+                                <img class="repo" src="./assets/icons/github-repo.png" style="width: 40px;" alt="GitHub logo">
+                                </a>
+                                <a class="projects-button" href="https://animal-explorer.netlify.app/">Live view</a>  
+                            </div>
+
+                            <div class="projects-box holographic-card">
+                                <h3>Back To Life Auto Body</h3>
+                                <img src="./assets/img/back-to-life.png" alt="A pixel art video game">
+                                <p>Web page developed with HTML/CSS/JavaScript, bootstrap and AOS </p>
+                                <a href="https://github.com/Hatonjan/auto-body-shop" target="_blank">
+                                <img class="repo" src="./assets/icons/github-repo.png" style="width: 40px;" alt="GitHub logo">
+                                </a>
+                                <a class="projects-button" href="https://back-to-life-auto-body.netlify.app/">Live view</a>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                
+                <div class="container">
+                    <div class="row">
+                        <h2>Education</h2>
+                        <div col-lg-12>
+                            <h4>BS in Computer Science (online program)</h4>
+                            <p>Sep 2028</p>
+                            <img class="university-logo" src="./assets/img/university-of-london-logo4.png" alt="University of london logo">                            
+                        </div>
+
+                        <h2>certifications</h2>
+                        <div class="col-lg-4">
+                            <h4>Google Project Management</h4>
+                            <p>Mar 2024</p>
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="./assets/img/google-pm-batch.png" alt="Google project Management certification batch">                                
+                                    </div>
+                                    <div class="card-back">
+                                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TVE2B8W7KU9C" target="_blank">
+                                        <img src="./assets/img/google-it-cert.png" alt="Google project management certification">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <h4>IBM Data Science</h4>
+                            <p>Dec 2024</p>
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="./assets/img/ibm-data-science-batch.png" alt="IBM data science certification batch">                                
+                                    </div>
+                                    <div class="card-back">
+                                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3MIIYA2LF70Q" target="_blank">
+                                        <img src="./assets/img/ibm-data-science-cert.png" alt="IBM data science certification">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <h4>Google IT Support</h4>
+                            <p>Feb 2025</p>
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <img src="./assets/img/google-it-batch.png" alt="Goggle IT support certification batch">                                
+                                    </div>
+                                    <div class="card-back">
+                                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/J64B8R9RXGUX" target="_blank">
+                                        <img src="./assets/img/google-it-cert.png" alt="google IT support certification">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pre-college">
+                            <h4>Pre-college certifications</h4>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EK2JSLNUDXXL" target="_blank">
+                                Introduction to Computer Science and Programming
+                            </a><br>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/P69FTRE6GNP2" target="_blank">
+                                Algebra: Elementary to Advanced 
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container code-editor"> 
+                <pre>
+                    <h2>
+        <span class="boolean">let</span><span class="string"> Get In Touch </span>=<span class="variable"> {</span></h2>
+                </pre>
+
+                <form name="contact" netlify method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                    <p>
+                        <label>Name:<br> <input type="text" name="name"></label>
+                    </p>
+                    <p>
+                        <label>Email:<br> <input type="email" name="email"></label>
+                    </p>
+                    <p>
+                        <label>Message:<br> <textarea name="message"></textarea></label>
+                    </p>
+                    <PRE><h2>       <span class="variable">}</span></h2></PRE>
+                    <p>
+                        <button type="submit"><span class="git">git </span><span>commit </span><span class="-m">-m </span><span class="boolean">"Send message"</span></button>
+                    </p>
+                </form>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/Hatonjan"  target="blank" aria-label="Facebook">  <img  src="./assets/icons/github.png"  alt="facebook"></a>
+                    <a href="https://www.linkedin.com/in/jonathan-scott-140709317/" target="blank" aria-label="Instagram"> <img  src="./assets/icons/linkedin.png" alt="Instagram"></a>
+                    <a href="mailto:mj.scot.r@gmail.com"    target="blank" aria-label="TikTok">    <img  src="./assets/icons/gmail.png"   alt="Tiktok"></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Jonathan Scott. All rights reserved.</p>
+        </footer>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

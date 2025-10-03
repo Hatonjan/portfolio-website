@@ -1,0 +1,710 @@
+/* Fonts */
+/* Tapestry */
+@font-face {
+    font-family: 'SUSE Mono';
+    src: url('/assets/fonts/SUSE_Mono/SUSEMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suez one';
+    src: url('/assets/fonts/Suez_One/SuezOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Basic CSS setup */
+:root {
+    /* Color palette */
+    --background: #1e1e1e;
+    --gradient-blue: #142a4b;
+    --gradient-purple: #3a2a81;
+    --font-color: whitesmoke;
+    --navBar-color: #070707E0;
+    --let-color: rgb(48, 228, 228);
+    --string-color: #8abffc;
+    --variable-color: #9d87fc;
+    --boolean-color: #3383fc;
+    --operator: #fcc511;
+    --brackets-color: #defd2d;
+    --brackets-color1: #38b84f;
+    --git-color: #e3e00d;   
+}
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up base font and background */
+html, body {
+    background: var(--background);
+    color: var(--font-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Container class for layout */
+.container {
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: var(--navBar-color);
+    position: fixed;
+    width: 100%;
+    letter-spacing: 2px;
+    color: white;
+    display: flex;
+    height: 80px;
+    z-index: 1024;
+}
+
+header .nav-link {
+    margin: 0px 30px;
+}
+
+/* logo */
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+.logo span{
+    color: var(--font-color);
+    position: static;
+}
+
+.logo img{
+    position: static;
+    width: 50px;
+    height: 50px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+/* end of logo */
+
+/* navigation bar */
+nav a.nav-link {
+    font-family: 'SUSE Mono';
+    color: var(--font-color);
+    font-size: 25px;
+}
+
+nav a.nav-link:hover {
+    color: rgb(161, 44, 74);
+    font-weight: bold;
+}
+
+.navbar-toggler span {
+    position: absolute;
+    left: 280px;
+    top: 10px;
+}
+
+nav button img {
+    height: 50px;
+}
+/* End of the navigation bar */
+/* End of header */
+
+#home {
+    padding: 80px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(var(--background),  var(--gradient-blue));
+    font-family: 'Suez one';
+    text-align: center;
+    color: var(--font-color);
+    height: 95vh;
+}
+
+.hero h1 {
+    padding-top: 5%;
+    font-size: 96px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    padding-bottom: 80px;
+}
+
+.hero img{
+    vertical-align: bottom;
+    width: 30%;
+    margin: 0 30px;
+}
+
+.hero-button {
+    background: var(--gradient-purple);
+    color: var(--font-color);
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 32px;
+    text-shadow: 4px 4px 4px var(--navBar-color);
+    box-shadow: 4px 4px 4px var(--navBar-color);
+}
+
+.hero-button:hover {
+    color: var(--font-color);
+    border: 1px solid var(--navBar-color);
+    padding: 7px 22px;
+    text-shadow: none;
+    box-shadow: none;
+}
+/* end of hero */
+
+/* About */
+#about {
+    background: linear-gradient(var(--gradient-blue), var(--gradient-purple));
+    color: var(--font-color);
+    height: fit-content;
+    padding: 80px 0;
+}
+
+#about h2 {
+    color: var(--font-color);
+    text-align: left;
+    font-size: 40px;
+}
+
+.code-editor {
+    border:5px solid var(--background);
+    background: #1e1e1ea0;
+    margin: 20px 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+.mobile-code-editor {
+    font-size: 0;
+    border: none;
+}
+
+.let {
+    color: var(--let-color);
+}
+
+.variable {
+    color: var(--variable-color);
+}
+
+.operator {
+    color: var(--operator);
+}
+
+.bracket {
+    color: var(--brackets-color);
+}
+
+.bracket1 {
+    color: var(--brackets-color1);
+}
+
+.boolean {
+    color: var(--boolean-color);
+}
+
+.string {
+    color: var(--string-color);
+}
+/* End of about */
+
+/* projects */
+#projects  {
+    background: linear-gradient(var(--gradient-blue), var(--gradient-purple));
+    font-family: 'Suez one';
+    text-align: center;
+    padding: 80px 0;
+    height: fit-content;
+}
+
+#projects h2 {
+    font-size: 64px;
+}
+
+#projects h3 {
+    padding-top: 24px;
+}
+
+#projects p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px 50px;
+}
+
+.projects-box {
+    border: 5px solid var(--navBar-color);
+    border-radius: 30px;
+    margin: 50px 50px ;
+    height: 480px;
+}
+
+.projects-box img {
+    width: 360px;
+    padding: 10px 0;
+}
+
+.projects-button {
+    background-color: #00971c;
+    color: var(--font-color);
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+
+.projects-button:hover {
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.repo {
+    margin-left: 10px ;
+    width: 125px !important;
+}
+/* End of projects */
+
+/* Start of education */
+#education {
+    background: linear-gradient(var(--gradient-blue), var(--gradient-purple));
+    text-align: center;
+    font-family: 'Suez one';
+    height: fit-content;
+    padding: 80px;
+}
+
+.university-logo {
+    width: 220px !important;
+    height: auto !important;
+    padding-bottom: 100PX;
+}
+
+#education h2 {
+    padding-bottom: 50px ;
+    text-align: center;
+    font-size: 55px;
+} 
+
+#education h3 {
+    padding: 40px 0 ;
+    font-size: 42px;
+} 
+
+#education p {
+    font-size: 18px;
+}
+
+#education img {
+    width: 200px;
+    height: 160px;
+}
+
+.pre-college h4 {
+    padding: 100px 0 20px;
+    font-size: 30px;
+}
+
+.pre-college a {
+    color: var(--string-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+}
+
+.pre-college a:hover {
+    color: var(--boolean-color);
+}
+/* End of education */
+
+/* Contact  */
+#contact {
+    background: linear-gradient(var(--gradient-blue), var(--gradient-purple));
+    font-family: SUSE Mono;
+    text-align: center;
+    height: fit-content;
+    padding: 80px 4%;
+
+}
+
+#contact h2 {
+    text-align: left;
+    color: var(--font-color);
+    font-size: 60px;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 32px;
+}
+
+form {  
+    color: var(--string-color);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    gap: 16px;
+    padding-bottom: 0px;
+}
+
+input, textarea {
+    background-color: var(--background);
+    color: rgb(225, 129, 94);
+    width: 500px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+textarea {
+    height: 150px;
+    border: 1px outset white;
+    border-radius: 40px;
+}
+
+#contact button {
+    font-family: monospace;
+    background-color: var(--navBar-color);
+    color: var(--font-color);
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid var(--background);
+    box-shadow: 10px  10px  10px var(--navBar-color);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#contact button:hover {
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 12px 32px;
+    margin-bottom: 46px;
+}
+
+.git {
+    color: var(--git-color);
+}
+
+.-m {
+    color: rgba(245, 245, 245, 0.5);
+}
+/* Social Icons */
+
+.social-icons {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+/* End of contact */
+
+/* Footer styling */
+footer {
+    background: var(--background);
+    color: var(--font-color);
+    text-align: center;
+    align-items: center;
+    padding: 16px;
+}
+/* End of footer*/
+
+/* Responsive tablet design */
+@media (max-width: 1023px) {
+      /* Header */
+    header {
+        /* position: relative; */
+    }
+    .logo {
+        padding: 10px 0;
+    }
+
+    .logo image {
+        height: 40px;
+        width: 40px;
+    };
+
+    .logo span{
+        font-size: 18px;
+    }
+
+    nav a.nav-link {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Hero section */
+    #home {
+        padding: 140px 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 72px;
+    }
+
+    .hero h2 {
+        font-size: 36px
+    }
+
+    .hero img {
+        width: 50%;
+        padding-top: 150px;
+    }
+
+    .hero-button {
+        
+        padding: 5px 10px;
+        font-size:28PX
+    }
+    /* End of hero */
+
+    /* About section */
+    #about {
+        padding-bottom: 40px;
+    }
+
+    .code-editor {
+        margin: 0px 5px;
+        padding: 10px 2px;
+        font-size: 20px;
+    }
+    /* End if about */
+
+    /* Education section */
+    #education h4 {
+        padding-top: 80px;
+    } 
+    /* End of education */
+
+    /* Contact section */
+    #contact {
+        padding: 20px 5%;
+    }
+
+    #contact h2 {
+        text-align: left;
+        font-size: 36px;
+    }
+    /* End of contact */
+}
+/* End of responsive tablet design */
+
+/* responsive mobile design */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        position: relative;
+    }
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav a.nav-link {
+        background-color: var(--background);
+        color: var(--font-color);
+        text-align: center;
+        font-weight: bolder;
+        font-size: 18px;
+        padding: 10px 50px;
+        margin: 0;
+    }
+    /* End of header */
+
+    /* Hero section */
+    #home {
+        padding: 80px 0;
+        height: fit-content;
+    }
+
+    .hero h1{
+        font-size: 32px;
+    }
+
+    .hero h2{
+        font-size: 16px;
+    }
+
+    .hero img {
+        padding: 0;
+        width: 80%;
+    }
+
+    .hero-button {
+        padding: 5px 15px;
+        font-size: 18px;
+    }
+
+    .hero-button:first-of-type {
+        position: absolute;
+        top: 540px;
+        left: 50px;
+        }
+
+    .hero-button:last-of-type {
+        position: absolute;
+        top: 540px;
+        right: 50px;
+    }
+    /* End of hero */
+
+    /* About section */
+    #about h2 {
+        font-size: 18px;
+
+    }
+
+    .code-editor {
+        background: transparent;
+        font-size: 0;
+        border: none;
+    }
+
+    .mobile-code-editor {
+        border:5px solid var(--background);
+        background: #1e1e1ea0;
+        margin: 0px 5px;
+        padding: 10px 10px;
+        border-radius: 20px;
+        font-size: 18px;
+        }
+    /* End of about */
+
+    /* projects section */
+    #projects h2 {
+        font-size: 48px;
+    }
+
+    #projects h3 {
+        font-size: 20px;
+    }
+
+    #projects p {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .projects-box {
+    height: fit-content;
+    }
+
+    .projects-box img {
+        width: 90%;
+        margin: 10px;
+        padding: 10px 0;
+    }
+
+    .projects-button {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .repo {
+        width: 100px !important;
+        text-decoration: none;
+    }
+    /* End of projects */
+
+    /* Education section */
+    #education {
+        padding: 0 0 80px;
+    }
+
+    .university-logo {
+        width: 220px !important;
+        height: auto !important;
+        padding-bottom: 100PX;
+    }
+
+    #education h2 {
+        font-size: 36px;
+        padding: 40px 0 ;
+    } 
+
+    #education h4 {
+        font-size: 25px;
+    } 
+
+    #education p {
+        font-size: 18px;
+    }
+
+    .pre-college h4 {
+        margin: 40px 0;
+        font-size: 28px !important;
+    }
+
+    .pre-college a {
+        display: flex;
+        font-size: 22px;
+    }
+    /* End of education */
+
+    /* Contact section */
+    #contact {
+        padding: 0;
+    }
+
+    #contact h2 { 
+        text-align: left;
+        font-size: 22px;
+        padding:20px 0;
+    }
+
+    #contact p {
+    font-size: 22px;
+    }
+
+    form {  
+        padding-bottom: 10px;
+    }
+
+    input, textarea {
+        background-color: var(--navBar-color);
+        border:1px solid var(--font-color);
+        width: 100%;
+        font-size: 20px;
+    }
+
+    textarea {
+        height: 120px;
+        border-radius: 15px;
+    }
+
+    #contact button {
+        font-size: 15px;
+    }
+
+    /* End of contact */
+
+    /* Social Icons */
+    .social-icons {
+        padding-bottom: 50px;
+        gap: 50px;
+    }
+    /* End os social icons */
+}
+/* Edn of the responsive style */
