@@ -302,8 +302,8 @@ nav button img {
 } 
 
 #education h3 {
-    padding: 40px 0 ;
-    font-size: 42px;
+    padding: 0px 0 ;
+    font-size: 30px;
 } 
 
 #education p {
@@ -494,8 +494,9 @@ footer {
     /* End if about */
 
     /* Education section */
-    #education h4 {
+    #education h3 {
         padding-top: 80px;
+        font-size: 30px;
     } 
     /* End of education */
 
@@ -515,9 +516,7 @@ footer {
 /* responsive mobile design */
 @media (max-width: 768px) {
     /* Header */
-    header {
-        position: relative;
-    }
+
     
     .logo img {
         width: 40px;
@@ -600,7 +599,7 @@ footer {
     }
 
     #projects h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     #projects p {
@@ -645,7 +644,7 @@ footer {
         padding: 40px 0 ;
     } 
 
-    #education h4 {
+    #education h3 {
         font-size: 25px;
     } 
 
