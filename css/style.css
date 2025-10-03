@@ -125,6 +125,7 @@ nav button img {
 /* Hero */
 .hero {
     background: linear-gradient(var(--background),  var(--gradient-blue));
+    background-color: #1e1e1e;
     font-family: 'Suez one';
     text-align: center;
     color: var(--font-color);
