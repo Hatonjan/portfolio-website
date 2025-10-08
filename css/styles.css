@@ -62,7 +62,7 @@ header {
     position: fixed;
     width: 100%;
     letter-spacing: 2px;
-    color: white;
+    color: var(--font-color);
     display: flex;
     height: 80px;
     z-index: 1024;
