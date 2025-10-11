@@ -55,3 +55,8 @@ function animation() {
 ['mouseenter', 'click'].forEach(event => {
     avatar.addEventListener(event, animation);
 })
+
+
+// slider clone
+const copy = document.querySelector('.certs-slide').cloneNode(true);
+document.querySelector('.certs').appendChild(copy)

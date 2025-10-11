@@ -163,7 +163,7 @@ nav button img {
 .hero-button:hover {
     color: var(--font-color);
     border: 1px solid var(--navBar-color);
-    padding: 7px 22px;
+    padding: 4px 19px;
     text-shadow: none;
     box-shadow: none;
 }
@@ -315,8 +315,8 @@ nav button img {
     height: 160px;
 }
 
-.pre-college h4 {
-    padding: 100px 0 20px;
+.pre-college h3 {
+    padding: 100px 0 20px !important;
     font-size: 30px;
 }
 
@@ -325,12 +325,66 @@ nav button img {
     text-decoration: none;
     text-align: center;
     font-size: 22px;
+    margin-top: 100px;
 }
 
 .pre-college a:hover {
     color: var(--boolean-color);
 }
 /* End of education */
+
+/* certs slider */
+#slide {
+    background: var(--gradient-purple);
+    color: var(--font-color);
+    font-family: 'Suez one';
+    text-align: center;
+}
+
+#slide h2{
+    padding: 30px 0;
+}
+
+#slide a{
+    text-decoration: none;
+    width: 80%;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.certs {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100vw;
+    /* margin-top: 100px; */
+}
+
+.certs:hover .certs-slide{
+    animation-play-state: paused;
+}
+
+.certs-slide {
+    animation: 40s slide infinite linear;
+    display: inline-block;
+}
+
+.certs-slide img {
+    height: 110px;
+    width: 200px;
+
+    margin: 0 40px;
+}
+/* End of certs slider */
+
 
 /* Contact  */
 #contact {
@@ -652,7 +706,7 @@ footer {
         font-size: 18px;
     }
 
-    .pre-college h4 {
+    .pre-college h3 {
         margin: 40px 0;
         font-size: 28px !important;
     }
