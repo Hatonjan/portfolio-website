@@ -14,14 +14,14 @@
         <!-- Social media tag -->
         <meta property="og:title" content="Jonathan Scott">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://portfolio.mjscott.dev/assets\img\pixel-avatar\pixel-avatar1.png">
+        <meta property="og:image" content="https://portfolio.mjscott.dev/assets\img\home-img.png">
         <meta property="og:url" content="https://portfolio.mjscott.dev/">
-        <meta property="og:description" content="Portfolio of Jonathan Scott, a developer focused on semantic HTML, and creative design.">
+        <meta property="og:description" content="Portfolio website of Jonathan Scott, a developer focused on semantic, functional code and creative design.">
         <meta property="og:locale" content="en_US">
         <meta property="og:site_name" content="Jonathan Scott portfolio">
         
         <title>Jonathan Scott | Web Developer & Designer</title>
-        <meta name="description" content="Portfolio of Jonathan Scott, a developer focused on semantic HTML, and creative design.">
+        <meta name="description" content="Portfolio website of Jonathan Scott, a developer focused on semantic, functional code and creative design.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
 
@@ -365,13 +365,13 @@
                 <form name="contact" netlify method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact">
                     <p>
-                        <label>Name:<br> <input type="text" name="name"></label>
+                        <label>Name:<br> <input type="text" name="name" required></label>
                     </p>
                     <p>
-                        <label>Email:<br> <input type="email" name="email"></label>
+                        <label>Email:<br> <input type="email" name="email" required></label>
                     </p>
                     <p>
-                        <label>Message:<br> <textarea name="message"></textarea></label>
+                        <label>Message:<br> <textarea name="message" required></textarea></label>
                     </p>
                     <PRE><h2>       <span class="variable">}</span></h2></PRE>
                     <p>
@@ -379,15 +379,22 @@
                     </p>
                 </form>
                 </div>
-                <div class="social-icons">
+            </section>
+        </main>
+        <footer>
+            <div class="social-icons">
                     <a href="https://github.com/Hatonjan"  target="_blank" aria-label="Facebook">  <img  src="./assets/icons/github.png"  alt="Github logo"></a>
                     <a href="https://linkedin.com/in/jonathan-sc0tt" target="blank" aria-label="LinkedIn"> <img  src="./assets/icons/linkedin.png" alt="LinkedIn logo"></a>
                     <a href="mailto:jonathan@mjscott.dev"    target="_blank" aria-label="TikTok">    <img  src="./assets/icons/gmail.png"   alt="Gmail logo"></a>
                     <a href="https://mjscott.dev"    target="_blank" aria-label="Freelance website">    <img  src="./assets/img/mjs.png"   alt="Gmail logo"></a>
                 </div>
-            </section>
-        </main>
-        <footer>
+                <ul">
+                    <a href="#home">home</a></li>
+                    <a href="#about">About</a></li>
+                    <a href="#projects">Projects</a></li>
+                    <a href="#education">Education</a></li>
+                    <a href="#contact">Contact</a></li>
+                </ul>
             <p>&copy; 2025 Jonathan Scott. All rights reserved.</p>
         </footer>
 
