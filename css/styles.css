@@ -20,9 +20,9 @@
 :root {
     /* Color palette */
     --background: #1e1e1e;
-    --gradient-blue: #142a4b;
-    --gradient-purple: #3a2a81;
-    --font-color: whitesmoke;
+    --gradient-blue: #031023;
+    --hologram-color: #00aeff80;
+    --text-color: whitesmoke;
     --navBar-color: #070707E0;
     --let-color: rgb(48, 228, 228);
     --string-color: #8abffc;
@@ -44,7 +44,7 @@
 /* Set up base font and background */
 html, body {
     background: var(--background);
-    color: var(--font-color);
+    color: var(--text-color);
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -62,7 +62,7 @@ header {
     position: fixed;
     width: 100%;
     letter-spacing: 2px;
-    color: var(--font-color);
+    color: var(--text-color);
     display: flex;
     height: 80px;
     z-index: 1024;
@@ -79,7 +79,7 @@ header .nav-link {
 }
 
 .logo span{
-    color: var(--font-color);
+    color: var(--text-color);
     position: static;
 }
 
@@ -97,7 +97,7 @@ header .nav-link {
 /* navigation bar */
 nav a.nav-link {
     font-family: 'SUSE Mono';
-    color: var(--font-color);
+    color: var(--text-color);
     font-size: 25px;
 }
 
@@ -124,12 +124,11 @@ nav button img {
 
 /* Hero */
 .hero {
-    background: linear-gradient(var(--background),  var(--gradient-blue));
-    background-color: #1e1e1e;
+    background: linear-gradient(var(--gradient-blue), var(--navBar-color));
     font-family: 'Suez one';
     text-align: center;
-    color: var(--font-color);
-    height: 95vh;
+    color: var(--text-color);
+    height: 100vh;
 }
 
 .hero h1 {
@@ -150,19 +149,19 @@ nav button img {
 
 .hero-button {
     background: var(--gradient-purple);
-    color: var(--font-color);
+    color: var(--text-color);
     text-decoration: none;
     display: inline-block;
+    font-size: 32px;
     padding: 5px 20px;
     border-radius: 20px;
-    font-size: 32px;
     text-shadow: 4px 4px 4px var(--navBar-color);
     box-shadow: 4px 4px 4px var(--navBar-color);
 }
 
 .hero-button:hover {
-    color: var(--font-color);
-    border: 1px solid var(--navBar-color);
+    color: var(--text-color);
+    border: 1px solid var(--variable-color);
     padding: 4px 19px;
     text-shadow: none;
     box-shadow: none;
@@ -171,14 +170,14 @@ nav button img {
 
 /* About */
 #about {
-    background: linear-gradient(var(--gradient-blue), var(--gradient-purple));
-    color: var(--font-color);
+    background: linear-gradient(var(--gradient-blue), var(--navBar-color));
+    color: var(--text-color);
     height: fit-content;
     padding: 80px 0;
 }
 
 #about h2 {
-    color: var(--font-color);
+    color: var(--text-color);
     text-align: left;
     font-size: 40px;
 }
@@ -227,7 +226,7 @@ nav button img {
 
 /* projects */
 #projects  {
-    background: linear-gradient(var(--gradient-blue), var(--gradient-purple));
+    background: linear-gradient(var(--gradient-blue), var(--navBar-color));
     font-family: 'Suez one';
     text-align: center;
     padding: 80px 0;
@@ -249,7 +248,7 @@ nav button img {
 }
 
 .projects-box {
-    border: 5px solid var(--navBar-color);
+    border: 5px ridge var(--hologram-color);
     border-radius: 30px;
     margin: 50px 50px ;
     height: 480px;
@@ -261,8 +260,9 @@ nav button img {
 }
 
 .projects-button {
-    background-color: #00971c;
-    color: var(--font-color);
+    background-color: var(--brackets-color1);
+    text-shadow: 2px 2px 4px var(--background);
+    color: var(--text-color);
     text-decoration: none;
     border-radius: 20px;
     padding: 10px 20px;
@@ -270,8 +270,9 @@ nav button img {
 }
 
 .projects-button:hover {
-    color: var(--font-color);
-    font-weight: bold;
+    color: var(--text-color);
+    text-shadow: none;
+    box-shadow: 2px 2px 4px var(--hologram-color);
 }
 
 .repo {
@@ -282,7 +283,7 @@ nav button img {
 
 /* Start of education */
 #education {
-    background: linear-gradient(var(--gradient-blue), var(--gradient-purple));
+    background: linear-gradient(var(--gradient-blue), var(--navBar-color));
     text-align: center;
     font-family: 'Suez one';
     height: fit-content;
@@ -335,10 +336,11 @@ nav button img {
 
 /* certs slider */
 #slide {
-    background: var(--gradient-purple);
-    color: var(--font-color);
+    background: var(--navBar-color);
+    color: var(--text-color);
     font-family: 'Suez one';
     text-align: center;
+    padding-bottom: 40px;
 }
 
 #slide h2{
@@ -361,7 +363,7 @@ nav button img {
 
 .certs {
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--navBar-color);
     overflow: hidden;
     white-space: nowrap;
     width: 100vw;
@@ -388,7 +390,7 @@ nav button img {
 
 /* Contact  */
 #contact {
-    background: linear-gradient(var(--gradient-blue), var(--gradient-purple));
+    background: linear-gradient(var(--gradient-blue), var(--navBar-color));
     font-family: SUSE Mono;
     text-align: center;
     height: fit-content;
@@ -398,7 +400,7 @@ nav button img {
 
 #contact h2 {
     text-align: left;
-    color: var(--font-color);
+    color: var(--text-color);
     font-size: 60px;
 }
 
@@ -434,7 +436,7 @@ textarea {
 #contact button {
     font-family: monospace;
     background-color: var(--navBar-color);
-    color: var(--font-color);
+    color: var(--text-color);
     padding: 10px 25px;
     border-radius: 10px;
     border: 2px solid var(--background);
@@ -463,7 +465,7 @@ textarea {
 /* Footer styling */
 footer {
     background: var(--background);
-    color: var(--font-color);
+    color: var(--text-color);
     text-align: center;
     align-items: center;
     padding: 16px;
@@ -588,7 +590,7 @@ footer ul {
 
     nav a.nav-link {
         background-color: var(--background);
-        color: var(--font-color);
+        color: var(--text-color);
         text-align: center;
         font-weight: bolder;
         font-size: 18px;
@@ -747,7 +749,7 @@ footer ul {
 
     input, textarea {
         background-color: var(--navBar-color);
-        border:1px solid var(--font-color);
+        border:1px solid var(--text-color);
         width: 100%;
         font-size: 20px;
     }
