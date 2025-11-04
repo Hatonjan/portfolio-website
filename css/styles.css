@@ -21,6 +21,7 @@
     /* Color palette */
     --background: #1e1e1e;
     --gradient-blue: #031023;
+    --gradient-purple: #21155e;
     --hologram-color: #00aeff80;
     --text-color: whitesmoke;
     --navBar-color: #070707E0;
@@ -602,7 +603,7 @@ footer ul {
     /* Hero section */
     #home {
         padding: 80px 0;
-        height: fit-content;
+        height: 95vh;
     }
 
     .hero h1{
