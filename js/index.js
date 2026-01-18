@@ -60,3 +60,6 @@ function animation() {
 // slider clone
 const copy = document.querySelector('.certs-slide').cloneNode(true);
 document.querySelector('.certs').appendChild(copy)
+
+// Updates the footer to the current year
+document.getElementById("year").textContent = new Date().getFullYear();
